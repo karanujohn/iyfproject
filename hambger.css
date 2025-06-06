@@ -4,6 +4,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+.ham{
+  
+}
 
 .hamburger{
   position: fixed;
