@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech360</title>
+  <link rel="stylesheet" href="company.css">
+  <script src="company.js" defer></script>
+</head>
+<body>
+<header>
+  <nav class="sidebar">
+      <div>
+
+      <li onClick=hideSidebar()><a href="#"><img src="assets/close.jpeg" alt="close"></a></li>
+      <a href="#">Home</a>
+      <a href="#">About us</a>
+      <a href="#">Services</a>
+     
+       </div>
+
+    <div class="logoo">Tech360</div>
+
+      <div>
+      <a href="#">Developers</a>
+      <a href="#">Resources</a>
+      <a href="#">contact us</a>
+    </div>
+    </div>
+  </nav>
+  <nav class="navbar">
+      <div class="leftnav">
+      <li class="hide"><a>Home</a></li>
+      <li class="hide"><a>About us</a></li>
+      <li class="hide"><a>Services</a></li>
+     
+       </div>
+
+    <div class="logo">Tech360</div>
+
+      <div class="rightnav">
+      <li class="hide"><a>Developers</a></li> 
+      <li class="hide"><a>Resources</a></li>
+      <li class="hide"><a>contact us</a></li>
+      <li onClick=showSidebar()><a href="#"></a><img  class="hammenu" src="assets/hammenu.jpeg" alt=""></li>
+      
+    </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <div class="hero_container">
+      <img src="assets/image1.jpeg" alt="hero image">
+      
+      <div class="hero_text">
+
+         <h1>Your best financial partner. </h1>
+       <p>we value your presence in our company. Experience the best 
+          services within our comfort.
+       </p>
+       <button class="hero_button">Get started</button> 
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="support_section">
+      
+      <div class="support_text">
+      <p>HOW IT WORKS</p>
+      <h2>YOUR FINANCIAL FREEDOM IS OUR PRIORITY</h2>
+  
+      <p>Discover a world of financial instruments, loans,bonds 
+      mortgages. Meet financial experts to help you through this 
+      journey.
+    </p>
+    <button>Find An Analyst</button>
+    </div>
+    <div class="support-image">                                                                  
+      <img class="support_image" src="assets/image2.jpeg" alt="handshake">
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="services_section">
+    <p>SERVICES</p>
+    <h1>YOUR PATHWAY TO FINANCIAL  BREAKTHROUGH</h1>
+    <p>Discover expert financial advice you need to make invetsment decisions
+      decisions
+    </p>
+    </div>
+  </section>
+  <section>
+    <div class="service_container">
+      <div class="service_one">
+         <div>
+          <img src="assets/image3.jpeg" alt="service_image">
+           
+        </div>
+        <div class="service_one_text">
+        <h2>Financial Analysis</h2>
+        <p>Eperience reliable financial status analysis for 
+        crucial decision making. We have analyse your assets,
+        liabilities and profits eported during the year. 
+        </p>
+       <button>Learn More</button>
+        </div>  
+     </div>
+     <div class="service_two">
+       <div class="service_two_text">
+        <h2>Investment Management</h2>
+       <p>We help you manage your investment to realize 
+          your financial goals. From bonds, stocks, money market fund,
+           mutual fund to capital investment. We are the drivers of growth.
+       </p> 
+       <button>Learn More</button>
+
+       </div>
+       
+     </div> 
+    </div>
+    <div class="service_three_container">
+       
+      <div class="service_three_text">
+          
+       <h2>loans</h2>
+       <p>Get the cash you need when you need it. simple fast 
+        and affordable easy loans. we don't need a guarantor 
+        or a collateral to give you a loan. 
+        <p>
+        The loans are cheap beginning 
+        from 7%. Access the loans at the comfort of your mobile phones.
+        we are happy to loan  and watch your business grow.
+        </p>
+       </p>
+       <button>learn More</button>
+       </div>
+       
+        <div class="loan_image">
+         <img  src="assets/loann.jpeg" alt="loan image">
+       </div>
+       
+    </div>
+  </section>
+  <section>
+    <div class="testimonials_container">
+      <div class="text">
+        <p>TESTIMONIALS</p>
+        <h1>WHAT ARE OUR CLIENTS SAYING</h1>
+        <p>This are the success stories from people 
+          who have benefited from our financial services.
+         
+        </p>
+        <button class="prev" onClick=prev()>&larr;</button>
+    <button class="next" onClick=next()>&rarr;</button>
+      </div>
+      <div class="cards">
+         <div class="client">
+        <p>I borrowed money from Tech360. The loans
+          have enabled me boost my business. The repayments 
+          plans are flexible with no pressures. long live Tech360. 
+          <p class="name1">--ben</p>
+        </p>
+      </div>
+      <div class="client">
+        <p>I was alomost closing down my business. Managing 
+          assets against liabilites was a big challenge to me. 
+          i received a group of experts who performed financial 
+          audit. my business now is a going concern. 
+          <p class="name2">--kyle</p>
+        </p>
+      </div>
+      <div class="client">
+        <p>Tech360 is a wonderful everyday invstment companion.
+          I have invested in stocks which are now paying high 
+          dividends. my business is reporting high profits. It is a sure win.
+          <p class="name3">--claire</p>
+        </p>
+      </div>
+
+      </div>
+     
+    </div>
+  </section>
+  <section>
+    <div class="partners_container">
+     
+      <div> <img  class="logo_one" src="assets/logo1.jpeg" alt="toko logo">  </div>
+      <div><img class="logo_two" src="assets/logo2.jpeg" alt="epic logo"></div>
+      <div><img class="logo_three" src="assets/logo3.jpeg" alt="hand logo"></div>
+      <div><img  class="logo_four" src="assets/logo4.jpeg" alt="paywatch logo"></div>
+      
+    </div>
+  </section>
+  <section>
+    <div class="resource_text">
+      <p>Explore & Learn</p>
+      <h1>Resources for Your Wellbeing</h1>
+      <p>Explore a vast resources relevant to your strategic
+        plans. This is a library to your wellbeing. click a button to
+        unravel magical experiences.
+      </p>
+    </div>
+  </section>
+  <section>
+    <div class="resources_container">
+      <div class="resource_one">
+        <h2>Investment Articles And Guides</h2>
+        <p>unlock the power of investing.
+          Explore beginner-friendly guides,market insights 
+          and explore tips to grow your wealth with confidence
+        </p>
+        <button>Explore</button>
+      </div>
+      <div class="resource_two">
+         <h2>Business Finance</h2>
+        <p>Fuel your business growth with practical financial strategies.
+          learn how to manage cashflow,plan budgets and make financial 
+          decisions.
+        </p>
+        <button>Explore</button>
+      </div>
+      <div class="resource_three">
+         <h2>Webinars and Workshops</h2>
+        <p>Live and recorded sessions. Explore remote training 
+          from indusrty experts. Dont miss out on important
+        content. Learn at the comfort of your screen</p>
+        <button>Explore</button>
+      </div>
+    </div> 
+  </section>
+  
+   <section>
+    <div class="network_container">
+      <div class="network_text">
+        <p>COMMUNITY</p>
+        <h2>You are not alone on this journey</h2>
+        <p>Connect with others, share experiences and find encouragement
+          in a safe, supportive space. 
+          <p>
+             Join our community of like-minded 
+          invetsors and financial enthusiasts.
+          </p>
+         
+          </p>
+          <button>Join The Community</button>
+      </div>
+      <div class="network_image">
+        <img src="assets/community.png" alt="community image">
+      </div>
+    </div>
+
+  </section>
+  
+  <section>
+    <div class="faq">
+      <div class="faq_first_section">
+         <div class="faq_text">
+        <p>Need Help?</p>
+        <h2>Frequently Asked Questions</h2>
+        <p>find answers t frequently asked questions about: the 
+          services we offfer, loans, financial planning , investment
+          management etc. stick around and get the necessary information
+          you need to start off.
+        </p>
+      </div>
+      <div class="faq_image">
+        <img src="assets/faqimage.png" alt="faqs" style="">
+      </div>
+      </div>
+      <div class="faq_answers">
+        <p>What financial services do you offer?
+          <img src="assets/plusicon.jpeg" alt="plus">
+        </p>
+        <p>How can I open an account today?
+           <img src="assets/plusicon.jpeg" alt="plus">
+        </p>
+        <p>
+           Are my investments insured or protected?
+            <img src="assets/plusicon.jpeg" alt="plus">
+        </p>
+        <p>What are the interest rates on your loans?
+           <img src="assets/plusicon.jpeg" alt="plus">
+        </p>
+        <p>Can I manage my investments online?
+           <img src="assets/plusicon.jpeg" alt="plus">
+        </p>
+        <p>which other services do you offer?
+           <img src="assets/plusicon.jpeg" alt="plus">
+        </p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="reachout_text">
+      <p>GET IN TOUCH</p>
+      <h2>We Are Here to Support You</h2>
+      <p>Feel free to reach out to us. voice your concerns. 
+        Make your comments, recommendations. Whether you are 
+        stuck need some cash or wanna make some investments--reach
+        out anytime.
+      </p>
+    </div>
+  </section>
+  <section>
+    <div class="handles_container">
+      <div class="contact">
+      <h2>Contact Details:</h2>
+      <p>Email:<a href="mailto:karanujohnkiarie@gmail.com">Support@tech360solutions.com</a></p>
+      <p>phone: +254-705332938</p>
+      <p>Address: 321 Waiyaki Way Nairobi City BA 00901</p>
+      <p class="response">We Typically respond within 24hours </p>
+      </div>
+      <div class="messages">
+        <form action="">
+           <div class="message_title">
+              <h2>send us a message</h2>     
+           </div>
+        <div class="message_box">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email"
+          required>
+
+          <label for="message">Message</label>
+          <input type="text" name="message" id="name" placeholder="Message"
+          required>
+          <button>Send Message</button>
+        </div>
+      </div>
+        </form>
+    </div>
+  </section>
+  <section>
+    <div class="last_section">
+    
+      <div class="more_info">
+          <h2>Tech 360</h2>
+        <div class="handles">
+           <a href="#">About Us</a>
+             <a href="#">Services</a>
+            <a href="#">Analysts</a>
+            <a href="#">Resources</a>
+              <a href="#">Contacts</a>
+         
+        </div>       
+          <div class="socials">
+            
+                    <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Youtube</a>
+                <a href="#">Linkedin</a>
+
+          
+            
+            </div>        
+            <div class="policy">
+              <a href="#">Terms of Use</a>
+              <a href="#">Privacy Policy</a>
+            
+         </div>
+         <p>&copy;[2025].All Rights Reserved</p>
+      </div>
+      <div class="support">
+        <img src="assets/finalimage.jpeg" alt="support">
+        <div class="final_support_text">
+          <h2>Find Support Guidance And Balance</h2> 
+           
+        </div>
+            <button>Find Support Now</button> 
+      </div>
+    </div>
+  </section>
+</main>
+<footer></footer>
+
+</body>
+</html>
