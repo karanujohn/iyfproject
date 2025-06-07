@@ -562,6 +562,27 @@ width: 70%;
   */
   
  }
+ .faq_answers p .icon:hover {
+    transform: translateY(-50%) scale(1.1);
+  }
+  .faq_answers p.expanded .icon {
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .faq_answers p span.answer {
+    display: block;
+    margin-top: 0.6rem;
+    font-weight: 400;
+    font-size: 1rem;
+    color: black;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 50px ease, opacity 0.3s ease;
+  }
+  .faq_answers p.expanded span.answer {
+    max-height: 100vh;
+    opacity: 1;
+  }
 .reachout_text{
   
   text-align: center;
