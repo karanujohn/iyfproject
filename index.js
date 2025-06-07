@@ -56,21 +56,30 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-document.querySelectorAll('.faq_answers p').forEach(p => {
-    const icon = p.querySelector('.icon');
-    const answer = p.querySelector('.answer');
-    icon.addEventListener('click', () => {
-      const expanded = p.classList.toggle('expanded');
-      icon.setAttribute('aria-expanded', expanded ? 'true' : 'false');
-    });
+//document.querySelectorAll('.faq_answers p').forEach(p => {
+  //  const icon = p.querySelector('.icon');
+   // const answer = p.querySelector('.answer');
+   // icon.addEventListener('click', () => {
+    //  const expanded = p.classList.toggle('expanded');
+  //    icon.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+  //  });
     // Optional: allow keyboard toggling on icon with Enter or Space
-    icon.addEventListener('keydown', (e) => {
-      if(e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        icon.click();
-      }
+   // icon.addEventListener('keydown', (e) => {
+   //   if(e.key === 'Enter' || e.key === ' ') {
+      //  e.preventDefault();
+     //   icon.click();
+    //  }
+    //});
+  //});//
+
+     document.querySelectorAll('.faq_answers p').forEach(p => {
+        const icon = p.querySelector('.icon');
+        const answer = p.querySelector('.answer');
+        
+        icon.addEventListener('click', () => {
+            p.classList.toggle('expanded');
+        });
     });
-  });
 
 
 
