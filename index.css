@@ -93,7 +93,7 @@ button:hover{
 
 .navbar{
   margin: 0px auto 0;
-
+  position: static;
   display: flex;
   justify-content: space-between;
   width: 97%;
@@ -228,8 +228,6 @@ border-radius: 30px;
 width: 48%;
 position: relative;
 
-
-
 }
 
 .service_one img{
@@ -304,17 +302,6 @@ border-radius: 30px;
   height: 400px;
   width: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 .testimonials_container{
@@ -688,11 +675,8 @@ input {
   width: 90%;
   height: 400px;
   margin: 0 auto;
-
-
-
-
 }
+
 .more_info{
   display: flex;
   justify-content: space-between;
@@ -814,17 +798,38 @@ padding: 10px;
   }
 
   .hero_text {
-    top: 5em; /* Adjust position */
-    left: 5em; /* Adjust position */
+    z-index: 999;
+    top: 3em; /* Adjust position */
+    left: 1.5em; /* Adjust position */
     width: 90%; /* Adjust width */
+    
   }
+ .hero_text h1{
+  z-index: 999;
+  font-size: 2em;
+ }
 
   .support_section {
     flex-direction: column; /* Stack support section items */
     align-items: center; /* Center items */
     width: 90%; /* Adjust width */
+    
+  }
+  .support_text{
+    height: 400px;
+  }
+  .support_section button {
+    margin-top: 2px; /* Adjust margin for button */
   }
 
+  .support_image{
+    background-size: cover;
+    width: 250%;
+    margin-left: -6em;
+    margin-top: 6rem;
+    
+  }
+ 
   .service_container {
     flex-direction: column; /* Stack service items */
     align-items: center; /* Center items */
@@ -867,30 +872,46 @@ padding: 10px;
 
   .faq {
     grid-template-columns: 1fr; /* Stack FAQ items */
+    margin-bottom:33em;
+
   }
   .faq_text{
     width: 50%;
-  }
+    margin-left: 4em;
+    }
   .faq_image{
     margin-left: -55px;
   }
-  .faq_answers {
-    margin-top: ; /* Adjust margin */
-    margi
+  .faq_answers p{
+    width: 70%;
   }
   
-
   .handles_container {
     grid-template-columns: 1fr; /* Stack handles */
+    margin-top: -5em;
   }
-
+  .message_title h2{
+    margin-left: 2em;
+  }
+  .messages{
+    border-radius: 20px;
+    background-color: beige;
+    margin-top:7.5em;
+  }
+  .message_box button{
+    margin: 2em auto 0 ;
+  }
   .last_section {
-    grid-template-columns: 1fr; /* Stack last section items */
+    grid-template-columns: 1fr;
+    margin-top: 24em;
   }
-
+ 
   .more_info {
-    flex-direction: column; /* Stack more info items */
-    padding: 50px 20px; /* Adjust padding */
+    flex-direction: rows; /* Stack more info items */
+   * Adjust padding */
+  }
+  .support{
+    height: 400px;
   }
 
   .final_support_text {
@@ -924,7 +945,8 @@ padding: 10px;
   }
 
 }
-@media(min-width: 1024px){
+
+@media (min-width: 1024px) {
   .hammenu{
     display: none;
   }
