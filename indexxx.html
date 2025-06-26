@@ -1,0 +1,90 @@
+# Redefine slides_content since the kernel reset
+slides_content = [
+    {
+        "title": "Factors That Determine Road Speed",
+        "content": "Safe Driving Begins with the Right Speed"
+    },
+    {
+        "title": "1. Road Conditions",
+        "content": "- Type of road: highway, rural, urban\n- Surface condition: dry, wet, gravel, or damaged\n- Curves, potholes, or obstructions"
+    },
+    {
+        "title": "2. Weather Conditions",
+        "content": "- Rain, fog, snow, or strong winds reduce visibility and traction\n- Adjust speed to match weather risk"
+    },
+    {
+        "title": "3. Traffic Flow",
+        "content": "- Heavier traffic = lower speeds\n- Maintain safe following distance and adjust to the flow"
+    },
+    {
+        "title": "4. Speed Limits",
+        "content": "- Posted legal limits must be obeyed\n- Set by law based on area and road type (e.g. school zones)"
+    },
+    {
+        "title": "5. Vehicle Condition",
+        "content": "- Brakes, tires, lights, and steering must be functional\n- A faulty vehicle requires cautious driving"
+    },
+    {
+        "title": "6. Visibility",
+        "content": "- Low light, glare, or fog reduces sight distance\n- Drive slower when visibility is limited"
+    },
+    {
+        "title": "7. Driver’s Condition",
+        "content": "- Fatigue, distraction, or impairment reduces reaction time\n- Drive at a manageable speed when tired or stressed"
+    },
+    {
+        "title": "8. Vulnerable Road Users",
+        "content": "- Pedestrians, cyclists, and animals may appear suddenly\n- Slow down near schools, residential areas, and markets"
+    },
+    {
+        "title": "9. Curves and Slopes",
+        "content": "- Sharp bends and steep hills require lower speeds\n- Prevents skidding and rollovers"
+    }
+]
+
+# Recreate HTML content
+html_content = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factors That Determine Road Speed</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .slide {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            width: 90%;
+            max-width: 800px;
+        }
+        .slide h2 {
+            color: #2c3e50;
+        }
+        .slide p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="slide">
+        <h2>{slide['title']}</h2>
+        <p>{content_html}</p>
+    </div>
+  
+
+
+</body>
+</html>
+
